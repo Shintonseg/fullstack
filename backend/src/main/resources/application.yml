@@ -5,5 +5,9 @@ spring:
       uri: mongodb+srv://dayuser:oneday@mongome.9ezrhll.mongodb.net/daytoday?retryWrites=true&w=majority
       auto-index-creation: true
 server:
-  port: 8080
-management.endpoints.web.exposure.include: health,info
+  port: ${PORT:8080}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
