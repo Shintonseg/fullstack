@@ -2,7 +2,7 @@
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://dayuser:oneday@mongome.9ezrhll.mongodb.net/daytoday?retryWrites=true&w=majority
+      uri: ${MONGODB_URI}
       auto-index-creation: true
 server:
   port: ${PORT:8080}
