@@ -1,0 +1,8 @@
+# src/main/resources/application.yml
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://dayuser:oneday@mongome.9ezrhll.mongodb.net/daytoday?retryWrites=true&w=majority
+server:
+  port: 8080
+management.endpoints.web.exposure.include: health,info
